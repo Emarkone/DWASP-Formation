@@ -1,0 +1,38 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.todo-form {
+    padding: 10px;
+    background: grey;
+    margin: 20px;
+}
+
+.todo-form input {
+    width: 250px;
+}
+
+
+.todo-button {
+    display: inline;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color: beige;
+    padding: 15px;
+}
+
+.todo:nth-child(2n) {
+    background-color: bisque;
+}
+
+p { display: inline }
