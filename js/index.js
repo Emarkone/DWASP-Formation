@@ -28,4 +28,5 @@ function addTodoTag(textTodo) {
 document.addTodoTab.addEventListener('submit', function(e) {
     e.preventDefault();
     addTodoTag(this.todoText.value);
+    this.reset();
 });
