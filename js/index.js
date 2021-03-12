@@ -1,3 +1,18 @@
+// NAVBAR
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = -$('#navbar').outerHeight() + "px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+
+// MAP INTEGRATION
+
 var mymap = L.map('my_osm_widget_map', { /* use the same name as your <div id=""> */
   center: [35.1508, 136.7341], /* set GPS Coordinates */
   zoom: 17, /* define the zoom level */
@@ -15,3 +30,4 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(mymap);
 
 L.marker([35.1508, 136.7341]).addTo(mymap); /* set your location's GPS Coordinates : [LAT,LON] */
+
