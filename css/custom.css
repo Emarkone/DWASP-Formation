@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+/* CARDS */
+
+.card-container {
+  display: flex;
+  flex-flow: column;
+  padding: 35px;
+}
+
+.card-icon {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px 40px 0px;
+}
+
+.card-icon img {
+  width: 100px;
+  border-radius: 50%;
+  border: solid 4px white;
+}
+
+#my_osm_widget_map { /* use the same name as <div id=""> */
+	width: 100%; /* important! if you need full width display */
+	height: 580px;
+	margin: 0;
+	border-radius: 5px;
+	/* ... */
+}
+
+footer ul {
+  list-style: none;
+}
