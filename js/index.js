@@ -1,4 +1,5 @@
 // NAVBAR
+$( document ).ready(function() {
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -9,7 +10,9 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = -$('#navbar').outerHeight() + "px";
   }
   prevScrollpos = currentScrollPos;
-} 
+}
+
+});
 
 // MAP INTEGRATION
 
