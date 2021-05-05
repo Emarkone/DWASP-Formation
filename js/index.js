@@ -1,4 +1,5 @@
 // NAVBAR
+$( document ).ready(function() {
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -9,20 +10,20 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = -$('#navbar').outerHeight() + "px";
   }
   prevScrollpos = currentScrollPos;
-} 
+}
+
+});
 
 // MAP INTEGRATION
 
-var mymap = L.map('my_osm_widget_map', { /* use the same name as your <div id=""> */
-  center: [35.1508, 136.7341], /* set GPS Coordinates */
-  zoom: 17, /* define the zoom level */
-  zoomControl: false, /* false = no zoom control buttons displayed */
-  scrollWheelZoom: false /* false = scrolling zoom on the map is locked */
+var mymap = L.map('my_osm_widget_map', {
+  center: [35.1508, 136.7341],
+  zoom: 17
 });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 30,
+    zoom: 30,
     id: 'mapbox/dark-v10',
     tileSize: 512,
     zoomOffset: -1,
