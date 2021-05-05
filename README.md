@@ -1,2 +1,2 @@
 # TD-TODOLIST
-preview at https://works.emarkone.com/td-todolist
+preview at https://works.emarkone.com/tp-todolist
