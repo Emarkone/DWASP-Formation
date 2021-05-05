@@ -53,7 +53,7 @@ document.addTodoTab.addEventListener('submit', function(e) {
 
     const text = this.todoText.value;
 
-    if(text.length < 5) {
+    if(text.length == 0) {
         return;
     }
 
