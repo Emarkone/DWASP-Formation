@@ -22,7 +22,7 @@ html {
 .card-container {
   display: flex;
   flex-flow: column;
-  padding: 35px;
+  padding: 1rem;
 }
 
 .card-icon {
